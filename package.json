@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://kabirsingh2004"
+    "url": "https://github.com/Alanwalker79/dislink"
   },
   "keywords": [
     "lava",
@@ -40,7 +40,7 @@
     "discord-music-bot",
     "music-bot"
   ],
-  "author": "Tech Boyᵈᵉᵛ#9610",
+  "author": "Alanwalker79",
   "license": "ISC",
   "dependencies": {
     "better-erela.js-spotify": "^1.2.3",
