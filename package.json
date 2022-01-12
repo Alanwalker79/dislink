@@ -1,5 +1,5 @@
 {
-  "name": "discodj",
+  "name": "dislink",
   "version": "1.0.3",
   "description": "A Lavalink Music Package for Discord.js",
   "main": "index.js",
