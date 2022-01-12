@@ -2,21 +2,7 @@
 
 A Discord.js module to simplify your music commands and play songs with audio filters on Discord
 
-[DiscoDJ Support Server](https://discord.gg/PcUVWApWN3)
 
-## Installation
-
-### Install **[discodj](https://npmjs.com/package/discodj)**
-
-```sh
-$ npm install --save discodj
-```
-
-### Install **[@discordjs/opus](https://npmjs.com/package/@discordjs/opus)**
-
-```sh
-$ npm install --save @discordjs/opus
-```
 
 ### Requirement
 
@@ -27,26 +13,10 @@ $ npm install --save @discordjs/opus
 - [@discordjs/opus](https://github.com/discordjs/opus)
 - [sodium](https://www.npmjs.com/package/sodium) or [libsodium-wrappers](https://www.npmjs.com/package/libsodium-wrappers)
 
-# Features
-
-- Support `Discord.js V13`
-- Simple & easy to use 🤘
-- Beginner friendly 😱
-- Audio filters 🎸
-- Lightweight ☁️
-- Multiple sources support ✌
-- Play in multiple servers at the same time 🚗
-- Does not inject anything to discord.js or your discord.js client 💉
-- Allows you to have full control over what is going to be streamed 👑
-- Support YouTube, SoundCloud, Facebook, Apple , Dizer and more....
-- Autoplay related songs
-- Best High Qaulity Music
-
-# EXAMPLE CODE
 
 ```js
 const { Client, MessageEmbed } = require("discord.js");
-const { LavaPlayer } = require("discodj");
+const { LavaPlayer } = require("@alanwalker79/dislink");
 
 const client = new Client({
   intents: ["GUILDS", "GUILD_MESSAGES", "GUILD_VOICE_STATES", "GUILD_MEMBERS"],
@@ -151,10 +121,10 @@ client.on("messageCreate", async (message) => {
             message.reply({
               embeds: [
                 new MessageEmbed()
-                  .setColor("BLURPLE")
+                  .setColor("BLACK")
                   .setTitle(`Song Skiped`)
                   .setFooter({
-                    text: `Coded By Tech Boy Gaming`,
+                    text: `DISLINK PACKAGE`,
                     iconURL: message.guild.iconURL({ dynamic: true }),
                   }),
               ],
@@ -172,10 +142,10 @@ client.on("messageCreate", async (message) => {
             message.reply({
               embeds: [
                 new MessageEmbed()
-                  .setColor("BLURPLE")
+                  .setColor("BLACK")
                   .setTitle(`Song Stoped`)
                   .setFooter({
-                    text: `Coded By Tech Boy Gaming`,
+                    text: `DISLINK PACKAGE`,
                     iconURL: message.guild.iconURL({ dynamic: true }),
                   }),
               ],
@@ -193,10 +163,10 @@ client.on("messageCreate", async (message) => {
             message.reply({
               embeds: [
                 new MessageEmbed()
-                  .setColor("BLURPLE")
+                  .setColor("BLACK")
                   .setTitle(`Song Paused`)
                   .setFooter({
-                    text: `Coded By Tech Boy Gaming`,
+                    text: `DISLINK PACKAGE`,
                     iconURL: message.guild.iconURL({ dynamic: true }),
                   }),
               ],
@@ -214,10 +184,10 @@ client.on("messageCreate", async (message) => {
             message.reply({
               embeds: [
                 new MessageEmbed()
-                  .setColor("BLURPLE")
+                  .setColor("BLACK")
                   .setTitle(`Song Resumed`)
                   .setFooter({
-                    text: `Coded By Tech Boy Gaming`,
+                    text: `DISLINK PACKAGE`,
                     iconURL: message.guild.iconURL({ dynamic: true }),
                   }),
               ],
@@ -235,10 +205,10 @@ client.on("messageCreate", async (message) => {
             message.reply({
               embeds: [
                 new MessageEmbed()
-                  .setColor("BLURPLE")
+                  .setColor("BLACK")
                   .setTitle(`Replaying Song`)
                   .setFooter({
-                    text: `Coded By Tech Boy Gaming`,
+                    text: `DISLINK PACKAGE`,
                     iconURL: message.guild.iconURL({ dynamic: true }),
                   }),
               ],
@@ -256,10 +226,10 @@ client.on("messageCreate", async (message) => {
             message.reply({
               embeds: [
                 new MessageEmbed()
-                  .setColor("BLURPLE")
+                  .setColor("BLACK")
                   .setTitle(`Playing Previous Song`)
                   .setFooter({
-                    text: `Coded By Tech Boy Gaming`,
+                    text: `DISLINK PACKAGE`,
                     iconURL: message.guild.iconURL({ dynamic: true }),
                   }),
               ],
@@ -276,10 +246,10 @@ client.on("messageCreate", async (message) => {
           message.reply({
             embeds: [
               new MessageEmbed()
-                .setColor("BLURPLE")
+                .setColor("BLACK")
                 .setTitle(`Volume set to ${volume}%`)
                 .setFooter({
-                  text: `Coded By Tech Boy Gaming`,
+                  text: `DISLINK PACKAGE`,
                   iconURL: message.guild.iconURL({ dynamic: true }),
                 }),
             ],
@@ -296,10 +266,10 @@ client.on("messageCreate", async (message) => {
             message.reply({
               embeds: [
                 new MessageEmbed()
-                  .setColor("BLURPLE")
+                  .setColor("BLACK")
                   .setTitle(`Loop Enabled`)
                   .setFooter({
-                    text: `Coded By Tech Boy Gaming`,
+                    text: `DISLINK PACKAGE`,
                     iconURL: message.guild.iconURL({ dynamic: true }),
                   }),
               ],
@@ -319,11 +289,11 @@ client.on("messageCreate", async (message) => {
         message.channel.send({
           embeds: [
             new MessageEmbed()
-              .setColor("BLURPLE")
+              .setColor("BLACK")
               .setTitle(`Queue of ${message.guild.name}`)
               .setDescription(string.join("\n").substr(0, 3000))
               .setFooter({
-                text: `Coded By Tech Boy Gaming`,
+                text: `DISLINK PACKAGE`,
                 iconURL: message.guild.iconURL({ dynamic: true }),
               }),
           ],
@@ -336,4 +306,3 @@ client.on("messageCreate", async (message) => {
 });
 ```
 
-# Thanks for Visiting
